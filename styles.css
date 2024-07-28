@@ -1,0 +1,116 @@
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.raven {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.head {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 50% 50% 40% 40%;
+}
+
+.beak {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 40px;
+    background-color: #444;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.eye {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.body {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.wing {
+    position: absolute;
+    top: 50px;
+    width: 60px;
+    height: 150px;
+    background-color: #444;
+    border-radius: 50% 50% 0 0;
+}
+
+.wing-left {
+    left: -30px;
+    transform: rotate(-20deg);
+}
+
+.wing-right {
+    right: -30px;
+    transform: rotate(20deg);
+}
+
+.tail {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 60px;
+    background-color: #444;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.legs {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.leg {
+    width: 10px;
+    height: 40px;
+    background-color: #444;
+    border-radius: 20% 20% 10% 10%;
+}
